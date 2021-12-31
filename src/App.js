@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import M from "materialize-css";
 import Footer from "./Components/Footer";
-
 import Landing from "./Components/Landing";
 import Navbar from "./Components/Navbar";
 import Card from "./Components/Card/";
+//styles
 import Grid from "@material-ui/core/Grid";
+import M from "materialize-css";
 import "./App.css";
-
+//json
 import projects from "./Data/projects.json";
 import comingsoon from "./Data/comingsoon.json";
 import frameworks from "./Data/frameworks.json";
@@ -22,35 +22,7 @@ class App extends Component {
   componentDidMount = () => {
     var elems = document.querySelectorAll(".parallax");
     M.Parallax.init(elems);
-    document.addEventListener("DOMContentLoaded", () => {
-      // initialize carousel
-      const elem = document.querySelectorAll(".carousel");
-      M.Carousel.init(elem, {
-        indicators: true,
-        duration: 300,
-        autoPlay: true, // this option is require for autoplay functionnality
-      });
-
-      // custom function for autoplaying
-      let indicatorItems = document.querySelectorAll(
-          ".carousel .indicator-item"
-        ),
-        slideTime = 1000,
-        activeClass = "active";
-
-      setInterval(() => {
-        indicatorItems.forEach((el) => {
-          if (el.classList.contains(activeClass)) {
-            M = el.nextElementSibling;
-            if (M == null) {
-              indicatorItems[0].click();
-            } else {
-              M.click();
-            }
-          }
-        });
-      }, slideTime);
-    });
+    
   };
 
   render() {
@@ -110,9 +82,9 @@ class App extends Component {
               <h1 className="carouselTitle center tools">
                 The tools of the Trade!
               </h1>
-              <div class="carousel">
+              <div className="carousel">
                 {frameworks.map((framework) => (
-                  <a href="link" class="carousel-item">
+                  <a key={framework.id} href="link" className="carousel-item">
                     <img
                       alt="images on carousel"
                       id={framework.id}
@@ -132,7 +104,7 @@ class App extends Component {
             <Grid
               container
               direction="row"
-              justify="center"
+              justifyContent="center"
               alignItems="center"
               spacing={10}
               style={{ paddingLeft: "25px", padding: "35px" }}
@@ -160,7 +132,7 @@ class App extends Component {
             <Grid
               container
               direction="row"
-              justify="center"
+              justifyContent="center"
               alignItems="center"
               spacing={10}
               style={{ paddingLeft: "25px", padding: "35px" }}

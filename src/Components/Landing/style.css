@@ -24,8 +24,8 @@ body {
 
 .landingScroll {
   position: absolute;
-  bottom: 60px;
-  width: 200px;
+  bottom: 5px;
+  width: 100%;
   margin: auto;
   display: block;
   cursor: pointer;
@@ -34,6 +34,7 @@ body {
   right: 0;
   text-transform: uppercase;
   font-weight: bold;
+
 }
 
 #carrot {
