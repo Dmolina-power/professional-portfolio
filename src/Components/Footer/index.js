@@ -10,14 +10,14 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col s12 m12 white-text">
-              <h4 className="white-text"> Got a project idea ? </h4>
-              <p className="white-text">
+              <h4 className="idea"> Got a project idea ? </h4>
+              <p className="ideat">
                 I help brands turn big ideas into beautiful digital products and
                 experiences.
               </p>
               <div className="card black">
                 <div className="card-content white-text black">
-                  <span className="card-title center white-text">
+                  <span className="card-title center connect">
                     Let 's Connect!
                   </span>
                   <div className="col s12 m6">

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
+//styles
 import "aos/dist/aos.css";
 import "./style.css";
 
@@ -12,14 +13,14 @@ const Landing = () => {
     <div className="background" id="enter">
       <div className="header center">
         <h1
-          className="landingHeader white-text"
+          className="landingHeader land"
           data-aos="zoom-in"
           data-aos-duration="1000"
         >
           Hi there,
         </h1>
         <h2
-          className="landingText white-text"
+          className="landingText landt"
           data-aos="fade-up"
           data-aos-easing="ease"
           data-aos-delay="600"
@@ -35,13 +36,13 @@ const Landing = () => {
         </h3>
       </div>
       <span
-        class="landingScroll white-text center"
+        className="landingScroll white-text center"
         data-aos="fade-up"
         data-aos-easing="ease"
         data-aos-delay="1000"
       >
         Scroll down <br />
-        <i class="large material-icons" id="carrot">
+        <i className="large material-icons" id="carrot">
           expand_more
         </i>
       </span>

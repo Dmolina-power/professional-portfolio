@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+//styles
 import "./style.css";
 
 const Navbar = () => {
@@ -22,20 +23,20 @@ const Navbar = () => {
   }, [ref]);
 
   return (
-    <div class="navbar">
+    <div className="navbar">
       <nav>
-        <div class="nav-wrapper black">
-          <ul class="right">
+        <div className="nav-wrapper black">
+          <ul className="right">
             <li>
             <a href="/"><i className="material-icons">home</i></a>
             </li>
             <li>
-              <a href="/portfolio" class="breadcrumb">
+              <a href="#portfolio" className="breadcrumb">
                 Portfolio
               </a>
             </li>
             <li>
-              <a href="#contact" class="breadcrumb">
+              <a href="#contact" className="breadcrumb">
                 Contact
               </a>
             </li>

@@ -5,32 +5,32 @@ import "./style.css";
 
 export class FrameWorks extends Component {
   componentDidMount() {
-    document.addEventListener("DOMContentLoaded", function () {
-      var elems = document.querySelectorAll(".carousel");
-      M.Carousel.init(elems, {
-        indicators: true,
-        duration: 300,
-        autoPlay: true,
-      });
-      let indicatorItems = document.querySelectorAll(
-          ".carousel .indicator-item"
-        ),
-        slideTime = 1000,
-        activeClass = "active";
+    // document.addEventListener("DOMContentLoaded", function () {
+    //   var elems = document.querySelectorAll(".carousel");
+    //   M.Carousel.init(elems, {
+    //     indicators: true,
+    //     duration: 300,
+    //     autoPlay: true,
+    //   });
+    //   let indicatorItems = document.querySelectorAll(
+    //       ".carousel .indicator-item"
+    //     ),
+    //     slideTime = 1000,
+    //     activeClass = "active";
 
-      setInterval(() => {
-        indicatorItems.forEach((el) => {
-          if (el.classList.contains(activeClass)) {
-            M = el.nextElementSibling;
-            if (M == null) {
-              indicatorItems[0].click();
-            } else {
-              M.click();
-            }
-          }
-        });
-      }, slideTime);
-    });
+    //   setInterval(() => {
+    //     indicatorItems.forEach((el) => {
+    //       if (el.classList.contains(activeClass)) {
+    //         M = el.nextElementSibling;
+    //         if (M == null) {
+    //           indicatorItems[0].click();
+    //         } else {
+    //           M.click();
+    //         }
+    //       }
+    //     });
+    //   }, slideTime);
+    // });
   }
 
   render() {
@@ -52,6 +52,7 @@ export class FrameWorks extends Component {
             ))}
          
         </div>
+        
       </div>
     );
   }
