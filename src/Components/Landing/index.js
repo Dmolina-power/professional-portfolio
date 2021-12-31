@@ -12,14 +12,14 @@ const Landing = () => {
     <div className="background" id="enter">
       <div className="header center">
         <h1
-          className="landingHeader white-text"
+          className="landingHeader land"
           data-aos="zoom-in"
           data-aos-duration="1000"
         >
           Hi there,
         </h1>
         <h2
-          className="landingText white-text"
+          className="landingText landt"
           data-aos="fade-up"
           data-aos-easing="ease"
           data-aos-delay="600"

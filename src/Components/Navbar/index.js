@@ -30,7 +30,7 @@ const Navbar = () => {
             <a href="/"><i className="material-icons">home</i></a>
             </li>
             <li>
-              <a href="/portfolio" class="breadcrumb">
+              <a href="#portfolio" class="breadcrumb">
                 Portfolio
               </a>
             </li>
