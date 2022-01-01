@@ -23,7 +23,12 @@ class App extends Component {
     var elems1 = document.querySelectorAll(".parallax");
     M.Parallax.init(elems1);
 
-    
+    var elems = document.querySelectorAll(".carousel");
+      M.Carousel.init(elems, {
+        indicators: true,
+        duration: 300,
+        autoPlay: true,
+      });
    
   
   };
