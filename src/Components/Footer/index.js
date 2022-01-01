@@ -2,7 +2,6 @@ import React from "react";
 import MyForm from "../Form";
 import Resume from "../../Pdf/Resume 2021.pdf";
 
-
 const Footer = () => {
   return (
     <>
@@ -22,25 +21,31 @@ const Footer = () => {
                   </span>
                   <div className="col s12 m6">
                     <h6 className="white-text">
-                      <i className="material-icons"> email </i>
+                      
                       danielmolinapower@gmail.com
                     </h6>
                     <h6 className="white-text">
-                      <i className="material-icons"> map </i> San Tan Valley,
+                      <i className="material-icons"> map </i> Queen Creek,
                       Arizona
                     </h6>
                     <a className="red-text" href={Resume} download>
-                                Download a Resume
-                              </a>
+                      Download a Resume
+                    </a>
                   </div>
                   <a href="https://github.com/Dmolina-power">
-                    <img src="https://img.icons8.com/fluent/96/000000/github.png" alt="github link"/>
+                    <img
+                      src="https://img.icons8.com/fluent/96/000000/github.png"
+                      alt="github link"
+                    />
                   </a>
                   <a
                     className="LI-simple-link"
                     href="https://www.linkedin.com/in/daniel-molina-power-b7705b1a6?trk=profile-badge"
                   >
-                    <img src="https://img.icons8.com/cute-clipart/96/000000/linkedin.png" alt="linked in link"/>
+                    <img
+                      src="https://img.icons8.com/cute-clipart/96/000000/linkedin.png"
+                      alt="linked in link"
+                    />
                   </a>
                 </div>
               </div>
@@ -58,6 +63,6 @@ const Footer = () => {
       </footer>
     </>
   );
-}
+};
 
 export default Footer;
