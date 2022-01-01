@@ -23,30 +23,7 @@ class App extends Component {
     var elems1 = document.querySelectorAll(".parallax");
     M.Parallax.init(elems1);
 
-    var elems = document.querySelectorAll(".carousel");
-      M.Carousel.init(elems, {
-        indicators: true,
-        duration: 400,
-        autoPlay: true,
-      });
-      let indicatorItems = document.querySelectorAll(
-          ".carousel .indicator-item"
-        ),
-        slideTime = 1000,
-        activeClass = "active";
-
-      setInterval(() => {
-        indicatorItems.forEach((el) => {
-          if (el.classList.contains(activeClass)) {
-            M = el.nextElementSibling;
-            if (M == null) {
-              indicatorItems[0].click();
-            } else {
-              M.click();
-            }
-          }
-        });
-      }, slideTime);
+    
    
   
   };
