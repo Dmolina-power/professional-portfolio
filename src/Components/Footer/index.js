@@ -1,6 +1,6 @@
 import React from "react";
 import MyForm from "../Form";
-import Resume from "../../Pdf/Resume 2021.pdf";
+import Resume from "../../Pdf/RESUME2022.pdf";
 
 const Footer = () => {
   return (
