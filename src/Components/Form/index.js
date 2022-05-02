@@ -20,9 +20,9 @@ export default class MyForm extends React.Component {
         <h4 className="white-text">I'd Love to Hear From You</h4>
         <p className="white-text">Fill out the form below, and I'll contact you as soon as possible.</p>
         <label>Email:</label>
-        <input type="email" name="email" />
+        <input className="form-text" type="email" name="email" />
         <label>Message:</label>
-        <input type="text" name="message" />
+        <input className="form-text"type="text" name="message" />
         {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
         {status === "ERROR" && <p>Ooops! There was an error.</p>}
       </form>
